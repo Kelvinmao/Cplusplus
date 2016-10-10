@@ -57,10 +57,14 @@ public:
 	}
 };		
 int main(void){
-	Solution sol; 
-	vector<int> numsInt(10,0);
-	vector<float> numsFloat(10,0);
-	vector<double> numsDouble(10,0); 
+	Solution sol;
+	cout<<"请输入待排序数组长度:";
+	cout<<endl;
+	int arr_size=0; 
+	cin>>arr_size;
+	vector<int> numsInt(arr_size,0);
+	vector<float> numsFloat(arr_size,0);
+	vector<double> numsDouble(arr_size,0); 
 	srand(time(0));
 	cout<<"生成待排序整型数组为:";
 	for(int i=0;i<numsInt.size();i++){

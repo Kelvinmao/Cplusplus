@@ -4,18 +4,18 @@
 #include"header.h"
 using namespace std;
 Date::Date(int m,int d,int y){
-	Date::month=m;
-	Date::day=d;
-	year=y;
+	m_month=m;
+	m_day=d;
+	m_year=y;
 }
 Time::Time(int s,int m,int h){
-	hour=h;
-	minute=m;
-	sec=s;
+	m_hour=h;
+	m_minute=m;
+	m_sec=s;
 }
 void Display(Date & D){
-	cout<<D.month<<"/"<<D.day<<"/"<<D.year<<endl;
+	cout<<D.m_month<<"/"<<D.m_day<<"/"<<D.m_year<<endl;
 }
 void Display(Time & T){
-	cout<<T.hour<<":"<<T.minute<<":"<<T.sec<<endl;
+	cout<<T.m_hour<<":"<<T.m_minute<<":"<<T.m_sec<<endl;
 }

@@ -4,18 +4,18 @@
 #define HEADER_H_
 
 class Date{
-	int month;
-	int day;
-	int year;
+	int m_month;
+	int m_day;
+	int m_year;
 	public:
 		Date(int,int,int);
 		friend void Display(Date &);
 };
 
 class Time{
-	int hour;
-	int minute;
-	int sec;
+	int m_hour;
+	int m_minute;
+	int m_sec;
 	public:
 		Time(int,int,int);
 		friend void Display(Time &);

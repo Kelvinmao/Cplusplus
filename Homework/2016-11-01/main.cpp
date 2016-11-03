@@ -1,4 +1,4 @@
-//main
+//main function
 #include<iostream>
 #include"header.h"
 using namespace std;
